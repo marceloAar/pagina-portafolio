@@ -21,19 +21,31 @@ Codigo HTML Portafolio-->
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>        
+        $(document).ready(function () {
+            $("#menu").hide();
+            
+            $('#botonMenu').click(function(){
+                $("#menu").toggle();        
+            })           
+        })       
+    </script>
   </head>
   <body>
 
     <!-- barra de navegacion     -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <nav id="#navMenu" class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        
         <div class="container">
-            <a class="navbar-brand" href="#">m/¬\R Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">m/¬\R Home</a>           
+            <button id="botonMenu" class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#menu" 
+                aria-controls="#menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#sobremi">Sobre Mi</a>
