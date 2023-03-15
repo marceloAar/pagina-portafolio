@@ -3,20 +3,21 @@ CSS Portafolio*/
 
 body {
     margin: 0;
-    background: lightgray;
+    background: gray;
 }
 
-.saludo{      
-    text-align: center;
+#home {
+    background-image: url("../img/imgRobot.jpg"); 
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+    
+    
+    max-width: 100%;
     padding: 10px;
-    height: 100vh;
-    background-size: cover;
+    height: 600px;
+    
     box-sizing: border-box;
-    filter: blur(2px);
-}
-
-.home {
-    background-image: url("../img/imgRobot.jpg");
+    filter: blur(1px);
 }
 
 .saludo-text {
@@ -95,6 +96,11 @@ body {
     background: linear-gradient(90deg, rgba(47,51,68,1) 0%, rgba(34,39,62,1) 35%, rgba(10,10,10,1) 100%);
     max-width: 100%;
     color: white;    
+}
+
+#sitios{      
+    background-color: white;
+    max-width: 100%; 
 }
 
 .p-contacto{
